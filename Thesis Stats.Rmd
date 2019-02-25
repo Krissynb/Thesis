@@ -1,0 +1,139 @@
+---
+title: "Thesis"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+PowLyme<- read.csv("Final Results Thesis .csv")
+PowLyme
+```
+
+```{r}
+library("tidyverse")
+```
+
+```{r}
+years <- PowLyme %>%
+  select(ID, POW, Lyme, Tick.Collection.Year, County, State)
+
+year2015 <- years %>% 
+  filter(Tick.Collection.Year == "2015")
+year2015
+
+year2016 <- years %>% 
+  filter(Tick.Collection.Year == "2016")
+
+year2017NJ <- years %>%
+  filter(Tick.Collection.Year == "2017") %>%
+  filter(State == "NJ")
+year2017NJ
+
+year2018NJ <- years %>% 
+  filter(Tick.Collection.Year == "2018") %>% 
+  filter(State == "NJ")
+year2018NJ
+
+year2017PA <- years %>%
+  filter(Tick.Collection.Year == "2017") %>%
+  filter(State == "PA")
+year2017PA
+
+year2018PA <- years %>% 
+  filter(Tick.Collection.Year == "2018") %>%
+  filter(State=="PA")
+year2018PA
+```
+
+```{r}
+library(Rmisc)
+```
+
+```{r}
+summary(year2015)
+summary(year2016)
+summary(year2017NJ)
+summary(year2017PA)
+summary(year2018NJ)
+summary(year2018PA)
+```
+
+```{r}
+year2018PA$POW = as.factor(year2018PA$POW)
+is.factor(year2015$POW)
+
+year2018PA$Lyme = as.factor(year2018PA$Lyme)
+is.factor(year2015$Lyme)
+```
+
+```{r}
+
+Lyme1 <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State) 
+Lyme1
+
+Lyme2 <- Lyme1 %>% 
+  filter(Tick.Collection.Year == "2018") %>%
+  filter(State == "NJ" | State == "PA")
+Lyme2
+
+Lyme3 <- Lyme2 %>%
+  gather(key = "Type", value = "Result", 2:3)
+Lyme3
+
+Lyme4 <- Lyme3 %>%
+  select(County, State, Type, Result)
+Lyme4
+
+Lyme4$County <- factor(Lyme4$County)
+Lyme4$Type <- factor(Lyme4$Type)
+Lyme4$Result <- factor(Lyme4$Result)
+Lyme4$State <- factor(Lyme4$State)
+
+Lyme5 <- Lyme4 %>%
+  group_by(State, County, Type, Result) %>%
+  tally()
+Lyme5
+
+Lyme6 <- Lyme5 %>% 
+  group_by(County, Type, State) %>%
+  dplyr::mutate(obs = sum(n))
+Lyme6
+  
+Lyme7 <- Lyme6 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive")
+Lyme7
+
+Lyme7 <- as.tibble(Lyme7)
+
+Lyme8 <- Lyme7 %>%
+  mutate(prop=n/obs)
+Lyme8
+str(Lyme8)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+Lyme1Stats <- glm(prop ~ County, family = "binomial", data = Lyme8)
+Lyme1Stats
+summary(Lyme1Stats)
+
+```
+
+
+
+Year1.5 <- as.tibble(Year1.5)
+str(Year1.5)
+
+Year1.6 <- Year1.5 %>% 
+  mutate(prop=n/obs)
+str(Year1.6)
+
+Year1Stats <- glm(prop ~ Tick.Collection.Year + County + Types, family= "binomial", data=Year1.6)
+Year1Stats
+summary(Year1Stats)
