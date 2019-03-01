@@ -74,7 +74,7 @@ is.factor(year2015$Lyme)
 ```{r}
 
 Lyme1 <- PowLyme %>% 
-  select(Tick.Collection.Year, POW, Lyme, County, State) 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex) 
 Lyme1
 
 Lyme2 <- Lyme1 %>% 
@@ -87,27 +87,29 @@ Lyme3 <- Lyme2 %>%
 Lyme3
 
 Lyme4 <- Lyme3 %>%
-  select(County, State, Type, Result)
+  select(County, State, Type, Result, Tick.Sex)
 Lyme4
 
 Lyme4$County <- factor(Lyme4$County)
 Lyme4$Type <- factor(Lyme4$Type)
 Lyme4$Result <- factor(Lyme4$Result)
 Lyme4$State <- factor(Lyme4$State)
+Lyme4$Tick.Sex <- factor(Lyme4$Tick.Sex)
 
 Lyme5 <- Lyme4 %>%
-  group_by(State, County, Type, Result) %>%
+  group_by(State, County, Type, Result, Tick.Sex) %>%
   tally()
 Lyme5
 
 Lyme6 <- Lyme5 %>% 
-  group_by(County, Type, State) %>%
+  group_by(County, Type, State, Tick.Sex) %>%
   dplyr::mutate(obs = sum(n))
 Lyme6
   
 Lyme7 <- Lyme6 %>%
   filter(Type == "Lyme")%>%
-  filter(Result == "Positive")
+  filter(Result == "Positive") %>% 
+  filter(Tick.Sex == "Female" | Tick.Sex == "Male") 
 Lyme7
 
 Lyme7 <- as.tibble(Lyme7)
@@ -119,21 +121,19 @@ str(Lyme8)
 
 options(contrasts=c('contr.sum', 'contr.poly'))
 
-Lyme1Stats <- glm(prop ~ County, family = "binomial", data = Lyme8)
-Lyme1Stats
-summary(Lyme1Stats)
+Lyme2018_glm <- glm(prop ~ County, family = "binomial", data = Lyme8)
+Lyme2018_glm
+summary(Lyme2018_glm)
+
+tukey2018 <- TukeyHSD(aov(Lyme2018_glm))
+tukey2018
+
+tukeyresults <- data.frame(tukey2018$County)
+tukeyresults$name <- rownames(tukeyresults)
+tukeyresults %>% 
+  filter(p.adj < 0.05)
+tukeyresults
+
 
 ```
-
-
-
-Year1.5 <- as.tibble(Year1.5)
-str(Year1.5)
-
-Year1.6 <- Year1.5 %>% 
-  mutate(prop=n/obs)
-str(Year1.6)
-
-Year1Stats <- glm(prop ~ Tick.Collection.Year + County + Types, family= "binomial", data=Year1.6)
-Year1Stats
-summary(Year1Stats)
+Next step is do post-hoc
