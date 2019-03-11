@@ -74,12 +74,13 @@ is.factor(year2015$Lyme)
 ```{r}
 
 Lyme1 <- PowLyme %>% 
-  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex) 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
 Lyme1
 
 Lyme2 <- Lyme1 %>% 
   filter(Tick.Collection.Year == "2018") %>%
-  filter(State == "NJ" | State == "PA")
+  filter(State == "NJ" | State == "PA") %>%
+  filter(Tick.Species == "Ixodes scapularis")
 Lyme2
 
 Lyme3 <- Lyme2 %>%
@@ -136,4 +137,187 @@ tukeyresults
 
 
 ```
-Next step is do post-hoc
+Run Tukey test for post-hoc if necssary  
+Are difference between 2018 PA vs 2018 NJ significant = no
+
+```{r}
+POW1 <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+POW1
+
+POW2 <- POW1 %>% 
+  filter(Tick.Collection.Year == "2018") %>%
+  filter(State == "NJ" | State == "PA") %>%
+  filter(Tick.Species == "Ixodes scapularis")
+POW2
+
+POW3 <- POW2 %>%
+  gather(key = "Type", value = "Result", 2:3)
+POW3
+
+POW4 <- POW3 %>%
+  select(County, State, Type, Result, Tick.Sex)
+POW4
+
+POW4$County <- factor(POW4$County)
+POW4$Type <- factor(POW4$Type)
+POW4$Result <- factor(POW4$Result)
+POW4$State <- factor(POW4$State)
+POW4$Tick.Sex <- factor(POW4$Tick.Sex)
+
+POW5 <- POW4 %>%
+  group_by(State, County, Type, Result, Tick.Sex) %>%
+  tally()
+POW5
+
+POW6 <- POW5 %>% 
+  group_by(County, Type, State, Tick.Sex) %>%
+  dplyr::mutate(obs = sum(n))
+POW6
+  
+POW7 <- POW6 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") %>% 
+  filter(Tick.Sex == "Female" | Tick.Sex == "Male") 
+POW7
+
+POW7 <- as.tibble(POW7)
+
+POW8 <- POW7 %>%
+  mutate(prop=n/obs)
+POW8
+str(POW8)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+POW2018_glm <- glm(prop ~ County, family = "binomial", data = POW8)
+POW2018_glm
+summary(POW2018_glm)
+
+tukeyPOW2018 <- TukeyHSD(aov(POW2018_glm))
+tukeyPOW2018
+
+tukeyPOWresults <- data.frame(tukeyPOW2018$County)
+tukeyPOWresults$name <- rownames(tukeyPOWresults)
+tukeyresults %>% 
+  filter(p.adj < 0.05)
+tukeyPOWresults
+
+```
+Powassan positive significance between 2018 PA and NJ = no significane 
+
+
+```{r}
+TickSex <- PowLyme
+str(TickSex)
+
+Female1 <- TickSex %>%
+  select(Tick.Sex, Tick.Collection.Year, Tick.Species, POW, Lyme)
+Female1
+
+Male1 <- Female1 %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Male" | Tick.Sex == "Female") 
+Male1
+
+Male2 <- Male1 %>%
+  gather(key = "Type", value = "Result", 4:5)
+Male2
+
+Male3 <- Male2 %>%
+  select(Tick.Sex, Type, Result)
+Male3
+
+Male3$Tick.Sex <- factor(Male3$Tick.Sex)
+Male3$Type <- factor(Male3$Type)
+Male3$Result <- factor(Male3$Result)
+
+Male4 <- Male3 %>%
+  group_by(Type, Result, Tick.Sex) %>%
+  tally()
+Male4
+
+Male5 <- Male4 %>% 
+  group_by(Tick.Sex, Type) %>%
+  dplyr::mutate(obs = sum(n))
+Male5
+  
+Male6 <- Male5 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+Male6
+
+Male6 <- as.tibble(Male6)
+
+Male7 <- Male6 %>%
+  mutate(prop=n/obs)
+Male7
+str(Male7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+ticksex_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Male7)
+ticksex_glm
+summary(ticksex_glm)
+```
+Powassan significant between male and female = no significance
+
+```{r}
+TickSex2 <- PowLyme
+str(TickSex2)
+
+Female2 <- TickSex2 %>%
+  select(Tick.Sex, Tick.Collection.Year, Tick.Species, POW, Lyme)
+Female2
+
+Female3 <- Female2 %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Male" | Tick.Sex == "Female") 
+Female3
+
+Female4 <- Female3 %>%
+  gather(key = "Type", value = "Result", 4:5)
+Female4
+
+Female5 <- Female4 %>%
+  select(Tick.Sex, Type, Result)
+Female5
+
+Female5$Tick.Sex <- factor(Female5$Tick.Sex)
+Female5$Type <- factor(Female5$Type)
+Female5$Result <- factor(Female5$Result)
+
+Female6 <- Female5 %>%
+  group_by(Type, Result, Tick.Sex) %>%
+  tally()
+Female6
+
+Female7 <- Female6 %>% 
+  group_by(Tick.Sex, Type) %>%
+  dplyr::mutate(obs = sum(n))
+Female7
+  
+Female8 <- Female7 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+Female8
+
+Female8 <- as.tibble(Female8)
+
+Female9 <- Female8 %>%
+  mutate(prop=n/obs)
+Female9
+str(Female9)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+ticksexLyme_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Female9)
+ticksexLyme_glm
+summary(ticksexLyme_glm)
+```
+Lyme data for tick sex male vs female significance = no(?)
+
+```{r}
+
+```
+
