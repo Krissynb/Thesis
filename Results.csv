@@ -1,0 +1,598 @@
+ID,Bear Number,Tick Species ,Tick Sex,Pooled Ticks,Engorgment,POW,Lyme,Test Run,Tick Collection Year,County ,State
+1,86,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/11/18,2017,Sussex,NJ
+2,86,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/11/18,2017,Sussex,NJ
+3,86,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,6/11/18,2017,Sussex,NJ
+4,92,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,6/11/18,2017,Sussex,NJ
+5,111,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/11/18,2017,Sussex,NJ
+6,111,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+7,291,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+8,453,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+9,453,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+10,453,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+11,10,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+12,10,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,6/20/18,2017,Sussex,NJ
+13,32,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/20/18,2017,Sussex,NJ
+14,32,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+15,605,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,6/20/18,2017,Sussex,NJ
+16,318,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+17,318,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+18,318,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/20/18,2017,Sussex,NJ
+19,106,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+20,106,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/20/18,2017,Sussex,NJ
+21,103,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/20/18,2017,Sussex,NJ
+22,69,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/20/18,2017,Warren,NJ
+23,69,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/20/18,2017,Warren,NJ
+24,69,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/20/18,2017,Warren,NJ
+25,41,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/20/201,2017,Warren,NJ
+26,41,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/20/18,2017,Warren,NJ
+27,41,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/20/18,2017,Warren,NJ
+28,41,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/20/18,2017,Warren,NJ
+29,41,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/20/18,2017,Warren,NJ
+30,296,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,6/20/18,2017,Warren,NJ
+31,9273,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+32,9273,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/27/18,2018,Warren,NJ
+33,9273,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+34,10202,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/27/17,2018,Warren,NJ
+35,10202,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/27/18,2018,Warren,NJ
+36,10202,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+37,10202,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+38,10202,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,6/27/18,2018,Warren,NJ
+39,9473,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,6/27/18,2018,Warren,NJ
+40,9473,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+41,9473,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+42,9194,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+43,9194,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+44,10041,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+45,10041,Ixodes scapularis,Nymph,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+46,10041,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+47,6573,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/27/18,2018,Warren,NJ
+48,6573,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,6/27/18,2018,Warren,NJ
+49,10003,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,6/27/18,2018,Sussex,NJ
+50,10003,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+51,10003,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+52,10003,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+53,10004,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/27/18,2018,Sussex,NJ
+54,9149,Ixodes scapularis,Nymph,1,Unengorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+55,9887,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+56,9198,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,6/29/18,2018,Sussex,NJ
+57,9198,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+58,9848,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+59,9848,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+60,10204,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,6/29/18,2018,Warren,NJ
+61,10204,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/29/18,2018,Warren,NJ
+62,10204,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,6/29/18,2018,Warren,NJ
+63,9776,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,6/29/18,2018,Sussex,NJ
+64,9848,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,6/29/18,2018,Sussex,NJ
+65,7900,Ixodes cookei ,Female,1,Semi-engorged,Negative ,Negative ,7/11/18,2018,Sussex,NJ
+66,19,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/11/18,2018,Sussex,NJ
+67,19,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/11/18,2018,Sussex,NJ
+68,7900,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+69,7900,Ixodes scapularis,Female,3,Unengorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+70,7900,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+71,7900,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+72,9848,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+73,9848,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+74,9848,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+75,9848,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,7/11/18,2018,Warren,NJ
+76,8814,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,7/20/18,2018,Warren,NJ
+77,8844,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,7/18/18,2018,Warren,NJ
+78,8844,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,7/18/18,2018,Warren,NJ
+79,8844,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,7/18/18,2018,Warren,NJ
+80,8844,Ixodes scapularis,Female,2,Fully engorged,Negative ,Negative ,7/18/18,2018,Warren,NJ
+81,8844,Ixodes scapularis,Nymph,3,Fully engorged,Negative ,Negative ,7/18/18,2018,Warren,NJ
+82,295,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,7/18/18,2017,Warren,NJ
+83,632,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,7/18/18,2015,Warren,NJ
+84,632,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,7/18/18,2015,Warren,NJ
+85,631,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/18/18,2015,Warren,NJ
+86,631,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/18/18,2015,Warren,NJ
+87,631,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,7/18/18,2015,Warren,NJ
+88,631,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,7/18/18,2015,Warren,NJ
+89,633,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,7/18/18,2015,Hunterdon,NJ
+90,633,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,7/18/18,2015,Hunterdon,NJ
+91,633,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,7/18/18,2015,Hunterdon,NJ
+92,633,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,7/18/18,2015,Hunterdon,NJ
+93,630,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,7/18/18,2015,Warren,NJ
+94,616,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Hunterdon,NJ
+95,616,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Hunterdon,NJ
+96,628,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+97,628,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+98,628,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+99,628,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+100,628,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+101,627,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+102,627,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+103,627,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+104,625,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+105,625,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,7/26/18,2015,Warren,NJ
+106,625,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,7/26/18,2015,Warren,NJ
+107,624,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+108,624,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+109,623,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+110,623,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+111,623,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,7/26/18,2015,Warren,NJ
+112,622,Ixodes scapularis,Female,4,Fully engorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+113,622,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+114,622,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+115,619,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,8/3/18,2015,Hunterdon,NJ
+116,619,Ixodes scapularis,Female,3,Fully engorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+117,619,Ixodes scapularis,Male,3,Unengorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+118,618,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,8/3/18,2015,Hunterdon,NJ
+119,618,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,8/3/18,2015,Hunterdon,NJ
+120,618,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+121,617,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+122,617,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+123,617,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+124,617,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/3/18,2015,Hunterdon,NJ
+125,21,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+126,20,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+127,15,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,8/3/18,2015,Warren,NJ
+128,15,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/3/18,2015,Warren,NJ
+129,41,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/3/18,2015,Sussex,NJ
+130,39,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/3/18,2015,Sussex,NJ
+131,39,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/3/18,2015,Sussex,NJ
+132,35,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+133,34,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+134,34,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+135,31,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+136,31,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+137,30,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+138,30,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+139,28,Ixodes scapularis,Female,3,Fully engorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+140,28,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+141,28,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+142,22,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+143,22,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+144,18,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+145,18,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+146,13,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+147,13,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+148,12,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,8/21/18,2015,Sussex,NJ
+149,11,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/21/18,2015,Sussex,NJ
+150,2,Ixodes scapularis,Male,3,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+151,2,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+152,2,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+153,2,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+154,3,Ixodes scapularis,Male,4,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+155,3,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+156,3,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+157,3,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+158,3,Ixodes scapularis,Female,2,Fully engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+159,4,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+160,5,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+161,5,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+162,5,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+163,5,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+164,6,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+165,6,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+166,6,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+167,6,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+168,8,Ixodes scapularis,Female,1,Semi-engorged,Positive,Positive,8/25/18,2016,Sussex,NJ
+169,8,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+170,8,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+171,8,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+172,9,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+173,9,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+174,10,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+175,10,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+176,10,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+177,10,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+178,11,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+179,11,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+180,11,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+181,11,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+182,13,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+183,13,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+184,13,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+185,13,Ixodes scapularis,Female,3,Fully engorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+186,14,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,8/25/18,2016,Sussex,NJ
+187,14,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+188,15,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,8/25/18,2016,Sussex,NJ
+189,15,Ixodes scapularis,Female,3,Unengorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+190,15,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,8/25/18,2016,Sussex,NJ
+191,17,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,9/5/18,2016,Sussex,NJ
+192,17,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/5/18,2016,Sussex,NJ
+193,20,Ixodes scapularis,Male,7,Unengorged,Negative ,Positive,9/5/18,2016,Sussex,NJ
+194,20,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/5/18,2016,Sussex,NJ
+195,20,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/5/18,2016,Sussex,NJ
+196,20,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/5/18,2016,Sussex,NJ
+197,20,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/5/18,2016,Sussex,NJ
+198,22,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/5/18,2016,Sussex,NJ
+199,22,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,9/5/18,2016,Sussex,NJ
+200,16,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/5/18,2016,Warren,NJ
+201,16,Ixodes scapularis,Female,2,Unengorged,Positive,Positive,9/5/18,2016,Warren,NJ
+202,16,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/5/18,2016,Warren,NJ
+203,30,Ixodes scapularis,Male,3,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+204,30,Ixodes scapularis,Female,3,Unengorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+205,30,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+206,154,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+207,162,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+208,162,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+209,167,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+210,167,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+211,167,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+212,169,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,9/8/18,2016,Warren,NJ
+213,169,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+214,169,Ixodes scapularis,Female,2,Fully engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+215,8819,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+216,8819,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+217,8819,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+218,8819,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+219,9209,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+220,9553,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+221,9553,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+222,9553,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/8/18,2016,Warren,NJ
+223,9553,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/8/18,2016,Warren,NJ
+224,28,Ixodes scapularis,Male,3,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+225,28,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+226,28,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+227,29,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+228,29,Ixodes scapularis,Female,3,Unengorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+229,31,Ixodes scapularis,Male,1,Unengorged,Positive,Positive,9/8/18,2016,Sussex,NJ
+230,31,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+231,31,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+232,144,Ixodes scapularis,Male,3,Unengorged,Positive,Positive,9/8/18,2016,Sussex,NJ
+233,144,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+234,145,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+235,145,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+236,145,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+237,145,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+238,145,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+239,147,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+240,147,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+241,148,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+242,148,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/8/18,2016,Sussex,NJ
+243,148,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+244,149,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+245,149,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+246,149,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/8/18,2016,Sussex,NJ
+247,249,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/9/18,2016,Sussex,NJ
+248,379,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/9/18,2016,Sussex,NJ
+249,379,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/9/18,2016,Sussex,NJ
+250,91,Ixodes scapularis,Male,4,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+251,91,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+252,91,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+253,91,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+254,91,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+255,105,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+256,105,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+257,105,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+258,105,Ixodes cookei ,Female,1,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+259,110,Ixodes scapularis,Male,7,Unengorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+260,110,Ixodes scapularis,Female,2,Unengorged,Positive,Positive,9/9/18,2017,Warren,NJ
+261,110,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+262,6,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+263,6,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+264,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+265,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/9/18,2017,Warren,NJ
+266,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+267,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+268,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+269,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+270,90,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/9/18,2017,Sussex,NJ
+271,90,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+272,90,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+273,93,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+274,93,Ixodes scapularis,Female,1,Unengorged,Positive,Negative ,9/9/18,2017,Sussex,NJ
+275,93,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+276,94,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+277,94,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+278,94,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/9/18,2017,Sussex,NJ
+279,30,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/9/18,2017,Warren,NJ
+280,30,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Warren,NJ
+281,30,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Warren,NJ
+282,30,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Warren,NJ
+283,101,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+284,101,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+285,101,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+286,104,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+287,9,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+288,9,Ixodes scapularis,Female,6,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+289,9,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+290,55,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+291,55,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+292,55,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+293,55,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+294,64,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,9/15/18,2017,Sussex,NJ
+295,64,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+296,64,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+297,67,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+298,67,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+299,67,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+300,68,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+301,252,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,9/15/18,2017,Sussex,NJ
+302,252,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+303,252,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+304,302,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+305,302,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+306,302,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+307,302,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+308,306,Ixodes scapularis,Female,1,Unengorged,Positive,Positive,9/15/18,2017,Sussex,NJ
+309,306,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+310,608,Ixodes scapularis,Male,4,Unengorged,Negative ,Negative ,9/15/18,2017,Sussex,NJ
+311,608,Ixodes scapularis,Female,1,Unengorged,Positive,Negative ,9/15/18,2017,Sussex,NJ
+312,608,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/15/18,2017,Sussex,NJ
+313,608,Ixodes scapularis,Female,5,Fully engorged,Negative ,Positive,9/17/18,2017,Sussex,NJ
+314,608,Ixodes scapularis,Female,5,Fully engorged,Negative ,Negative ,9/17/18,2017,Sussex,NJ
+315,299,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/17/18,2017,Sussex,NJ
+316,299,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/17/18,2017,Sussex,NJ
+317,299,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/17/18,2017,Sussex,NJ
+318,304,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/17/18,2017,Sussex,NJ
+319,304,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/17/18,2017,Sussex,NJ
+320,14,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,9/17/18,2017,Monroe,PA
+321,38,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+322,37,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/17/18,2017,Monroe,PA
+323,37,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/17/18,2017,Monroe,PA
+324,37,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+325,37,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+326,37,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/17/18,2017,Monroe,PA
+327,44,Ixodes scapularis,Female,1,Unengorged,Positive,Positive,9/17/18,2017,Monroe,PA
+328,44,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+329,44,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+330,44,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/17/18,2017,Monroe,PA
+331,55,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/17/18,2017,Pike,PA
+332,55,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/17/18,2017,Pike,PA
+333,43,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/17/18,2017,Pike,PA
+334,1723665,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+335,1723665,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+336,1723665,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+337,1723667,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+338,1723667,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+339,1723667,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+340,1723668,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+341,1723668,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+342,172366,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+343,172366,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,9/19/18,2017,Monroe,PA
+344,172366,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+345,172366,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,9/19/18,2017,Monroe,PA
+346,51100,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+347,51100,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+348,52030,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/28/18,2018,Lycoming,PA
+349,35998,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+350,35998,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+351,35998,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+352,35998,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+353,35998,Ixodes scapularis,Female,2,Fully engorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+354,27518,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+355,27518,Ixodes scapularis,Female,1,Unengorged,Positive,Negative ,9/28/18,2018,Clinton,PA
+356,27518,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/28/18,2018,Clinton,PA
+357,51039,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+358,51039,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+359,51039,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+360,51039,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+361,51039,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+362,51039,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+363,51039,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/28/18,2018,Clinton,PA
+364,48076,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,9/28/18,2018,Lycoming,PA
+365,48076,Ixodes scapularis,Female,1,Semi-engorged,Positive,Negative ,9/28/18,2018,Lycoming,PA
+366,48076,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,9/28/18,2018,Lycoming,PA
+367,51660,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/29/18,2018,Potter,PA
+368,51049,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+369,51049,Ixodes scapularis,Female,1,Unengorged,Positive,Negative ,9/29/18,2018,Clinton,PA
+370,51049,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+371,52028,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+372,52028,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+373,52028,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+374,51032,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+375,51032,Ixodes scapularis,Male,5,Unengorged,Positive,Positive,9/29/18,2018,Clinton,PA
+376,51032,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+377,51032,Ixodes scapularis,Female,3,Unengorged,Positive,Positive,9/29/18,2018,Clinton,PA
+378,51032,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+379,51032,Ixodes scapularis,Female,2,Fully engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+380,27516,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+381,27516,Ixodes scapularis,Male,5,Unengorged,Positive,Positive,9/29/18,2018,Clinton,PA
+382,27516,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+383,27516,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+384,27516,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+385,27516,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+386,27516,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,9/29/18,2018,Clinton,PA
+387,27516,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+388,27516,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+389,27516,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,9/29/18,2018,Clinton,PA
+390,41630,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,10/1/18,2018,Tioga,PA
+391,41630,Ixodes scapularis,Male,1,Unengorged,Positive,Positive,10/1/18,2018,Tioga,PA
+392,41630,Ixodes scapularis,Female,5,Unengorged,Positive,Positive,10/1/18,2018,Tioga,PA
+393,41630,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,10/1/18,2018,Tioga,PA
+394,41638,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,10/1/18,2018,Tioga,PA
+395,41638,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,10/1/18,2018,Tioga,PA
+396,41638,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,10/1/18,2018,Tioga,PA
+397,23095,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,10/1/18,2018,Lycoming,PA
+398,23095,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Positive,10/1/18,2018,Lycoming,PA
+399,51047,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,10/1/18,2018,Clinton,PA
+400,51047,Ixodes scapularis,Female,1,Semi-engorged,Positive,Negative ,10/1/18,2018,Clinton,PA
+401,33138,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,10/1/18,2018,Clinton,PA
+402,33138,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,10/1/18,2018,Clinton,PA
+403,33138,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,10/1/18,2018,Clinton,PA
+404,51942,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,10/1/18,2018,Clinton,PA
+405,51942,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,10/1/18,2018,Clinton,PA
+406,41688,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,10/1/18,2018,Potter,PA
+407,33142,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+408,33142,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,10/6/18,2018,Clinton,PA
+409,33142,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,10/6/18,2018,Clinton,PA
+410,35414,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,10/6/18,2018,Clinton,PA
+411,35414,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+412,35414,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+413,51636,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+414,51172,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+415,51172,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+416,51172,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,10/6/18,2018,Clinton,PA
+417,51172,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,10/6/18,2018,Clinton,PA
+418,51949,Ixodes scapularis,Male,4,Unengorged,Positive,Positive,10/6/18,2018,Clinton,PA
+419,51949,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,10/6/18,2018,Clinton,PA
+420,1,Ixodes scapularis,Male,3,Unengorged,Positive,Positive,11/11/18,2018,Warren,NJ
+421,1,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+422,2,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+423,2,Ixodes scapularis,Female,6,Semi-engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+424,2,Ixodes scapularis,Female,3,Unengorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+425,2,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+426,2,Ixodes scapularis,Nymph,2,Fully engorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+427,3,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+428,3,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+429,3,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+430,4,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+431,4,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+432,4,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+433,4,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+434,44,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+435,44,Ixodes scapularis,Female,2,Unengorged,Positive,Positive,11/11/18,2018,Sussex,NJ
+436,44,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+437,6,Ixodes scapularis,Female,3,Unengorged,Positive,Positive,11/11/18,2018,Sussex,NJ
+438,6,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+439,7,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+440,7,Ixodes scapularis,Female,2,Unengorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+441,7,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+442,7,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+443,8,Ixodes scapularis,Male,1,Unengorged,Positive,Positive,11/11/18,2018,Sussex,NJ
+444,8,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+445,8,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+446,8,Ixodes scapularis,Nymph,1,Semi-engorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+447,9,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+448,9,Ixodes scapularis,Female,3,Unengorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+449,9,Ixodes scapularis,Female,6,Semi-engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+450,9,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,11/11/18,2018,Warren,NJ
+451,45,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+452,45,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+453,45,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,11/11/18,2018,Sussex,NJ
+454,45,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+455,45,Ixodes scapularis,Female,2,Fully engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+456,56,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,11/11/18,2018,Warren,NJ
+457,15,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+458,15,Ixodes scapularis,Female,6,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+459,15,Ixodes scapularis,Female,6,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+460,14,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+461,14,Ixodes scapularis,Female,4,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+462,14,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+463,13,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+464,13,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+465,13,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+466,13,Ixodes scapularis,Female,2,Fully engorged,Positive,Positive,11/11/18,2018,Sussex,NJ
+467,44,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,11/11/18,2018,Sussex,NJ
+468,56,Ixodes scapularis,Nymph,1,Unengorged,Negative ,Negative ,12/4/19,2018,Sussex,NJ
+469,33168,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+470,33168,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+471,51357,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,1/4/19,2018,Potter,PA
+472,51357,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/4/19,2018,Potter,PA
+473,51357,Ixodes scapularis,Nymph,1,Semi-engorged,Negative ,Negative ,1/4/19,2018,Potter,PA
+474,35676,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,1/4/19,2018,Clinton,PA
+475,35676,Ixodes scapularis,Female,4,Unengorged,Negative ,Positive,1/4/19,2018,Clinton,PA
+476,35676,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,1/4/19,2018,Clinton,PA
+477,35676,Ixodes scapularis,Female,3,Fully engorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+478,51370,Ixodes scapularis,Nymph,3,Semi-engorged,Negative ,Positive,1/4/19,2018,Clinton,PA
+479,52026,Ixodes scapularis,Nymph,2,Unengorged,Negative ,Negative ,1/4/19,2018,Centre,PA
+480,52026,Ixodes scapularis,Nymph,5,Semi-engorged,Negative ,Negative ,1/4/19,2018,Centre,PA
+481,52026,Ixodes scapularis,Nymph,2,Semi-engorged,Negative ,Negative ,1/4/19,2018,Centre,PA
+482,52026,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/4/19,2018,Centre,PA
+483,35918,Ixodes scapularis,Nymph,1,Unengorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+484,35918,Ixodes scapularis,Nymph,1,Semi-engorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+485,35918,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+486,35918,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,1/4/19,2018,Clinton,PA
+487,41479,Ixodes scapularis,Nymph,2,Unengorged,Negative ,Negative ,1/4/19,2018,Lycoming,PA
+488,41479,Ixodes scapularis,Nymph,5,Semi-engorged,Negative ,Negative ,1/4/19,2018,Lycoming,PA
+489,41479,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,1/4/19,2018,Lycoming,PA
+490,51486,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+491,51486,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+492,51486,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+493,51486,Ixodes scapularis,Female,3,Semi-engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+494,51486,Ixodes scapularis,Female,2,Fully engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+495,51366,Ixodes scapularis,Nymph,3,Unengorged,Positive,Positive,1/10/19,2018,Clearfield,PA
+496,36361,Ixodes scapularis,Nymph,2,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+497,35017,Ixodes scapularis,Nymph,5,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+498,35017,Ixodes scapularis,Nymph,5,Semi-engorged,Positive,Positive,1/10/19,2018,Clinton,PA
+499,35017,Ixodes scapularis,Nymph,6,Fully engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+500,35017,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,1/10/19,2018,Clinton,PA
+501,35017,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+502,51234,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+503,51234,Ixodes scapularis,Male,5,Unengorged,Positive,Positive,1/10/19,2018,Clinton,PA
+504,51234,Ixodes scapularis,Female,4,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+505,51234,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+506,51234,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+507,51034,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+508,51034,Ixodes scapularis,Female,4,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+509,51034,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+510,51034,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+511,51034,Ixodes scapularis,Female,2,Fully engorged,Positive,Negative ,1/10/19,2018,Clinton,PA
+512,35017,Ixodes scapularis,Male,5,Unengorged,Positive,Negative ,1/10/19,2018,Clinton,PA
+513,35017,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+514,35017,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,1/10/19,2018,Clinton,PA
+515,35017,Ixodes scapularis,Female,5,Unengorged,Positive,Positive,1/10/19,2018,Clinton,PA
+516,35017,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+517,35017,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+518,35017,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/10/19,2018,Clinton,PA
+519,1805571,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,1/19/19,2018,Huntingdon,PA
+520,1805571,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,1/19/19,2018,Huntingdon,PA
+521,1805571,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Negative ,1/19/19,2018,Huntingdon,PA
+522,1805571,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,1/19/19,2018,Huntingdon,PA
+523,1805571,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/19/19,2018,Huntingdon,PA
+524,1805574,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/19/19,2018,Huntingdon,PA
+525,1805574,Ixodes scapularis,Female,2,Fully engorged,Negative ,Negative ,1/19/19,2018,Huntingdon,PA
+526,51044,Ixodes scapularis,Male,3,Unengorged,Positive,Positive,1/18/19,2018,Clinton,PA
+527,51044,Ixodes scapularis,Male,5,Unengorged,Positive,Positive,1/18/19,2018,Clinton,PA
+528,51044,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+529,51044,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+530,51044,Ixodes scapularis,Female,3,Fully engorged,Negative ,Positive,1/18/19,2018,Clinton,PA
+531,51178,Ixodes scapularis,Nymph,1,Fully engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+532,51178,Ixodes scapularis,Female,4,Unengorged,Positive,Positive,1/18/19,2018,Clinton,PA
+533,51178,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,1/18/19,2018,Clinton,PA
+534,51178,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+535,51178,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+536,51036,Ixodes scapularis,Male,4,Unengorged,Negative ,Positive,1/18/19,2018,Clinton,PA
+537,51036,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+538,51036,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+539,51036,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+540,51036,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+541,51036,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+542,51036,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/18/19,2018,Clinton,PA
+543,1804200,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,1/18/19,2018,Lycoming,PA
+544,1804200,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,1/18/19,2018,Lycoming,PA
+545,1804200,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,1/18/19,2018,Lycoming,PA
+546,1804201,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,1/18/19,2018,Lycoming,PA
+547,1804201,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,1/18/19,2018,Lycoming,PA
+548,1804202,Ixodes scapularis,Male,3,Unengorged,Negative ,Positive,1/18/19,2018,Lycoming,PA
+549,1804202,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,1/18/19,2018,Lycoming,PA
+550,1804202,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/18/19,2018,Lycoming,PA
+551,1804204,Ixodes scapularis,Female,1,Semi-engorged,Positive,Negative ,1/18/19,2018,Lycoming,PA
+552,1804203,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+553,1804203,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+554,1804203,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+555,1804203,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+556,1804203,Ixodes scapularis,Female,5,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+557,1804203,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,1/21/19,2018,Lycoming,PA
+558,1804203,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/21/19,2018,Lycoming,PA
+559,1804203,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Negative ,1/21/19,2018,Lycoming,PA
+560,1804203,Ixodes scapularis,Male,2,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+561,1804203,Ixodes scapularis,Female,2,Unengorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+562,1804207,Ixodes scapularis,Female,1,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+563,1804207,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,1/19/19,2018,Lycoming,PA
+564,1804207,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,1/21/19,2018,Lycoming,PA
+565,1804208,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+566,1804208,Ixodes scapularis,Male,5,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+567,1804208,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+568,1804208,Ixodes scapularis,Female,5,Semi-engorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+569,1804208,Ixodes scapularis,Female,4,Semi-engorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+570,1804208,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,1/21/19,2018,Lycoming,PA
+571,1804209,Ixodes scapularis,Male,2,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+572,1804209,Ixodes scapularis,Female,5,Unengorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+573,1804209,Ixodes scapularis,Female,2,Semi-engorged,Negative ,Positive,1/19/19,2018,Lycoming,PA
+574,1803379,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+575,1803379,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+576,1803379,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+577,1803380,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+578,1803380,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+579,1803380,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+580,1803380,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+581,1803378,Ixodes scapularis,Female,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+582,1803384,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+583,1803384,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+584,1803388,Ixodes scapularis,Male,5,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+585,1803388,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Positive,2/5/19,2018,Clearfield,PA
+586,1803390,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,2/5/19,2018,Clearfield,PA
+587,1803390,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+588,1803390,Ixodes scapularis,Male,1,Unengorged,Negative ,Negative ,2/5/19,2018,Clearfield,PA
+589,1804278,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,2/5/19,2018,Lycoming,PA
+590,1804278,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,2/5/19,2018,Lycoming,PA
+591,1804281,Ixodes scapularis,Male,1,Unengorged,Negative ,Positive,2/5/19,2018,Lycoming,PA
+592,1804281,Ixodes scapularis,Female,1,Fully engorged,Negative ,Positive,2/5/19,2018,Lycoming,PA
+593,1805549,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,2/5/19,2018,Huntingdon,PA
+594,1805549,Ixodes scapularis,Female,1,Fully engorged,Negative ,Negative ,2/5/19,2018,Huntingdon,PA
+595,1810780,Ixodes scapularis,Female,1,Semi-engorged,Negative ,Negative ,2/5/19,2018,Lycoming,PA
+596,1810784,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,2/5/19,2018,Lycoming,PA
+597,1810787,Ixodes scapularis,Male,1,Unengorged,Positive,Negative ,2/5/19,2018,Lycoming,PA

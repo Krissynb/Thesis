@@ -10,8 +10,10 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
 ```{r}
-PowLyme<- read.csv("Final Results Thesis .csv")
+PowLyme<- read.csv("Results.csv")
 PowLyme
+
+str(PowLyme)
 ```
 
 ```{r}
@@ -318,6 +320,541 @@ summary(ticksexLyme_glm)
 Lyme data for tick sex male vs female significance = no(?)
 
 ```{r}
+NJYears <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+NJYears
 
+NJYears1 <- NJYears %>% 
+  filter(Tick.Collection.Year == "2018"| Tick.Collection.Year == "2017" | Tick.Collection.Year == "2016" | Tick.Collection.Year == "2015") %>%
+  filter(State == "NJ") %>%
+  filter(Tick.Species == "Ixodes scapularis")
+NJYears1
+
+NJYears2 <- NJYears1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+NJYears2
+
+NJYears3 <- NJYears2 %>%
+  select(State, Type, Result, Tick.Collection.Year)
+NJYears3
+
+NJYears3$Tick.Collection.Year <- factor(NJYears3$Tick.Collection.Year)
+NJYears3$Type <- factor(NJYears3$Type)
+NJYears3$Result <- factor(NJYears3$Result)
+NJYears3$State <- factor(NJYears3$State)
+
+
+NJYears4 <- NJYears3 %>%
+  group_by(State, Type, Result, Tick.Collection.Year) %>%
+  tally()
+NJYears4
+
+NJYears5 <- NJYears4 %>% 
+  group_by(State, Type, Tick.Collection.Year) %>%
+  dplyr::mutate(obs = sum(n))
+NJYears5
+  
+NJYears6 <- NJYears5 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+NJYears6
+
+NJYears6 <- as.tibble(NJYears6)
+
+NJYears7 <- NJYears6 %>%
+  mutate(prop=n/obs)
+NJYears7
+str(NJYears7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+POWNJ_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJYears7)
+POWNJ_glm
+summary(POWNJ_glm)
+```
+POW Significant difference between 2015-2018 NJ = no significance 
+
+```{r}
+NJLYears <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+NJLYears
+
+NJLYears1 <- NJLYears %>% 
+  filter(Tick.Collection.Year == "2018"| Tick.Collection.Year == "2017" | Tick.Collection.Year == "2016" | Tick.Collection.Year == "2015") %>%
+  filter(State == "NJ") %>%
+  filter(Tick.Species == "Ixodes scapularis")
+NJLYears1
+
+NJLYears2 <- NJLYears1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+NJLYears2
+
+NJLYears3 <- NJLYears2 %>%
+  select(State, Type, Result, Tick.Collection.Year)
+NJLYears3
+
+NJLYears3$Tick.Collection.Year <- factor(NJLYears3$Tick.Collection.Year)
+NJLYears3$Type <- factor(NJLYears3$Type)
+NJLYears3$Result <- factor(NJLYears3$Result)
+NJLYears3$State <- factor(NJLYears3$State)
+
+
+NJLYears4 <- NJLYears3 %>%
+  group_by(State, Type, Result, Tick.Collection.Year) %>%
+  tally()
+NJLYears4
+
+NJLYears5 <- NJLYears4 %>% 
+  group_by(State, Type, Tick.Collection.Year) %>%
+  dplyr::mutate(obs = sum(n))
+NJLYears5
+  
+NJLYears6 <- NJLYears5 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+NJLYears6
+
+NJLYears6 <- as.tibble(NJLYears6)
+
+NJLYears7 <- NJLYears6 %>%
+  mutate(prop=n/obs)
+NJLYears7
+str(NJLYears7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+NJL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJLYears7)
+NJL_glm
+summary(NJL_glm)
+```
+Significance b/w NJ 2015-2018 for Lyme = no significance
+
+```{r}
+PAYears <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+PAYears
+
+PAYears1 <- PAYears %>% 
+  filter(Tick.Collection.Year == "2018"| Tick.Collection.Year == "2017") %>%
+  filter(State == "PA") %>%
+  filter(Tick.Species == "Ixodes scapularis")
+PAYears1
+
+PAYears2 <- PAYears1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+PAYears2
+
+PAYears3 <- PAYears2 %>%
+  select(State, Type, Result, Tick.Collection.Year)
+PAYears3
+
+PAYears3$Tick.Collection.Year <- factor(PAYears3$Tick.Collection.Year)
+PAYears3$Type <- factor(PAYears3$Type)
+PAYears3$Result <- factor(PAYears3$Result)
+PAYears3$State <- factor(PAYears3$State)
+
+PAYears4 <- PAYears3 %>%
+  group_by(State, Type, Result, Tick.Collection.Year) %>%
+  tally()
+PAYears4
+
+PAYears5 <- PAYears4 %>% 
+  group_by(State, Type, Tick.Collection.Year) %>%
+  dplyr::mutate(obs = sum(n))
+PAYears5
+  
+PAYears6 <- PAYears5 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+PAYears6
+
+PAYears6 <- as.tibble(PAYears6)
+
+PAYears7 <- PAYears6 %>%
+  mutate(prop=n/obs)
+PALYears7
+str(PAYears7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+POWPA_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PAYears7)
+POWPA_glm
+summary(POWPA_glm)
+```
+POW significance between PA 2017-2018 = no significance
+
+```{r}
+PALYears <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+PALYears
+
+PALYears1 <- PALYears %>% 
+  filter(Tick.Collection.Year == "2018"| Tick.Collection.Year == "2017") %>%
+  filter(State == "PA") %>%
+  filter(Tick.Species == "Ixodes scapularis")
+PALYears1
+
+PALYears2 <- PALYears1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+PALYears2
+
+PALYears3 <- PALYears2 %>%
+  select(State, Type, Result, Tick.Collection.Year)
+PALYears3
+
+PALYears3$Tick.Collection.Year <- factor(PALYears3$Tick.Collection.Year)
+PALYears3$Type <- factor(PALYears3$Type)
+PALYears3$Result <- factor(PALYears3$Result)
+PALYears3$State <- factor(PALYears3$State)
+
+PALYears4 <- PALYears3 %>%
+  group_by(State, Type, Result, Tick.Collection.Year) %>%
+  tally()
+PALYears4
+
+PALYears5 <- PALYears4 %>% 
+  group_by(State, Type, Tick.Collection.Year) %>%
+  dplyr::mutate(obs = sum(n))
+PALYears5
+  
+PALYears6 <- PALYears5 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+PALYears6
+
+PALYears6 <- as.tibble(PALYears6)
+
+PALYears7 <- PALYears6 %>%
+  mutate(prop=n/obs)
+PALYears7
+str(PALYears7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+PAL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PALYears7)
+PAL_glm
+summary(PAL_glm)
+```
+Significanc for Lyme PA 2017 vs 2018 = no significance 
+
+```{r}
+PANJPOW <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+PANJPOW
+
+PANJPOW1 <- PANJPOW %>% 
+  filter(Tick.Species == "Ixodes scapularis") 
+PANJPOW1
+
+PANJPOW2 <- PANJPOW1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+PANJPOW2
+
+PANJPOW3 <- PANJPOW2 %>%
+  select(State, Type, Result)
+PANJPOW3
+
+PANJPOW3$Type <- factor(PANJPOW3$Type)
+PANJPOW3$Result <- factor(PANJPOW3$Result)
+PANJPOW3$State <- factor(PANJPOW3$State)
+
+PANJPOW4 <- PANJPOW3 %>%
+  group_by(State, Type, Result) %>%
+  tally()
+PANJPOW4
+
+PANJPOW5 <- PANJPOW4 %>% 
+  group_by(State, Type) %>%
+  dplyr::mutate(obs = sum(n))
+PANJPOW5
+  
+PANJPOW6 <- PANJPOW5 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+PANJPOW6
+
+PANJPOW6<- as.tibble(PANJPOW6)
+
+PANJPOW7 <- PANJPOW6 %>%
+  mutate(prop=n/obs)
+PANJPOW7
+str(PANJPOW7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+PANJPOW_glm <- glm(prop ~ State, family = "binomial", data = PANJPOW7)
+PANJPOW_glm
+summary(PANJPOW_glm)
+```
+Significace between POW PA vs NJ overall = no significance 
+
+```{r}
+PANJLyme <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+PANJLyme
+
+PANJLyme1 <- PANJLyme %>% 
+  filter(Tick.Species == "Ixodes scapularis") 
+PANJLyme1 
+
+PANJLyme2 <- PANJLyme1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+PANJLyme2
+
+PANJLyme3 <- PANJLyme2 %>%
+  select(State, Type, Result)
+PANJLyme3
+
+PANJLyme3$Type <- factor(PANJLyme3$Type)
+PANJLyme3$Result <- factor(PANJLyme3$Result)
+PANJLyme3$State <- factor(PANJLyme3$State)
+
+PANJLyme4 <- PANJLyme3 %>%
+  group_by(State, Type, Result) %>%
+  tally()
+PANJLyme4
+
+PANJLyme5 <- PANJLyme4 %>% 
+  group_by(State, Type) %>%
+  dplyr::mutate(obs = sum(n))
+PANJLyme5
+  
+PANJLyme6 <- PANJLyme5 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+PANJLyme6
+
+PANJLyme6<- as.tibble(PANJLyme6)
+
+PANJLyme7 <- PANJLyme6 %>%
+  mutate(prop=n/obs)
+PANJLyme7
+str(PANJLyme7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+PANJLyme_glm <- glm(prop ~ State, family = "binomial", data = PANJLyme7)
+PANJLyme_glm
+summary(PANJLyme_glm)
+```
+PA vs NJ Lyme = no significane 
+
+```{r}
+Engorg <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species, Engorgment) 
+Engorg
+
+Engorg1 <- Engorg %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Female" | Tick.Sex == "Male")
+Engorg1
+
+Engorg2 <- Engorg1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+Engorg2
+
+Engorg3 <- Engorg2 %>%
+  select(Engorgment, Type, Result, Tick.Sex)
+Engorg3
+str(Engorg3)
+
+Engorg3$Type <- factor(Engorg3$Type)
+Engorg3$Result <- factor(Engorg3$Result)
+Engorg3$Tick.Sex <- factor(Engorg3$Tick.Sex)
+Engorg3$Engorgment <- factor(Engorg3$Engorgment)
+
+Engorg4 <- Engorg3 %>%
+  group_by(Tick.Sex, Type, Result, Engorgment) %>%
+  tally()
+Engorg4
+str(Engorg4)
+
+Engorg5 <- Engorg4 %>% 
+  group_by(Tick.Sex, Type, Engorgment) %>%
+  dplyr::mutate(obs = sum(n))
+Engorg5
+  
+Engorg6 <- Engorg5%>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+Engorg6
+
+Engorg6<- as.tibble(Engorg6)
+
+Engorg7 <- Engorg6 %>%
+  mutate(prop=n/obs)
+Engorg7
+str(Engorg7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+POWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = Engorg7)
+POWEngorg_glm
+summary(POWEngorg_glm)
+```
+No engorgment significance for POW in adults
+
+```{r}
+EngorgLyme <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species, Engorgment) 
+EngorgLyme
+
+EngorgLyme1 <- EngorgLyme %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Female" | Tick.Sex == "Male")
+EngorgLyme1
+
+EngorgLyme2 <- EngorgLyme1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+EngorgLyme2
+
+EngorgLyme3 <- EngorgLyme2 %>%
+  select(Engorgment, Type, Result, Tick.Sex)
+EngorgLyme3
+str(EngorgLyme3)
+
+EngorgLyme3$Type <- factor(EngorgLyme3$Type)
+EngorgLyme3$Result <- factor(EngorgLyme3$Result)
+EngorgLyme3$Tick.Sex <- factor(EngorgLyme3$Tick.Sex)
+EngorgLyme3$Engorgment <- factor(EngorgLyme3$Engorgment)
+
+EngorgLyme4 <- EngorgLyme3 %>%
+  group_by(Tick.Sex, Type, Result, Engorgment) %>%
+  tally()
+EngorgLyme4
+str(EngorgLyme4)
+
+EngorgLyme5 <- EngorgLyme4 %>% 
+  group_by(Tick.Sex, Type, Engorgment) %>%
+  dplyr::mutate(obs = sum(n))
+EngorgLyme5
+  
+EngorgLyme6 <- EngorgLyme5 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+EngorgLyme6
+
+EngorgLyme6 <- as.tibble(EngorgLyme6)
+
+EngorgLyme7 <- EngorgLyme6 %>%
+  mutate(prop=n/obs)
+EngorgLyme7
+str(EngorgLyme7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+LymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = EngorgLyme7)
+LymeEngorg_glm
+summary(LymeEngorg_glm)
+```
+no significance for engorgment in adults for Lyme
+
+```{r}
+NEngorg <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species, Engorgment) 
+NEngorg
+
+NEngorg1 <- NEngorg %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Nymph")
+NEngorg1
+
+NEngorg2 <- NEngorg1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+NEngorg2
+
+NEngorg3 <- NEngorg2 %>%
+  select(Engorgment, Type, Result, Tick.Sex)
+NEngorg3
+str(NEngorg3)
+
+NEngorg3$Type <- factor(NEngorg3$Type)
+NEngorg3$Result <- factor(NEngorg3$Result)
+NEngorg3$Tick.Sex <- factor(NEngorg3$Tick.Sex)
+NEngorg3$Engorgment <- factor(NEngorg3$Engorgment)
+
+NEngorg4 <- NEngorg3 %>%
+  group_by(Tick.Sex, Type, Result, Engorgment) %>%
+  tally()
+NEngorg4
+str(NEngorg4)
+
+NEngorg5 <- NEngorg4 %>% 
+  group_by(Tick.Sex, Type, Engorgment) %>%
+  dplyr::mutate(obs = sum(n))
+NEngorg5
+  
+NEngorg6 <- NEngorg5%>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+NEngorg6
+
+NEngorg6<- as.tibble(NEngorg6)
+
+NEngorg7 <- NEngorg6 %>%
+  mutate(prop=n/obs)
+NEngorg7
+str(NEngorg7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+NPOWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = NEngorg7)
+NPOWEngorg_glm
+summary(NPOWEngorg_glm)
+```
+Nymp no significance for engorment and POW
+
+```{r}
+LNEngorg <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species, Engorgment) 
+LNEngorg
+
+LNEngorg1 <- LNEngorg %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Nymph")
+LNEngorg1
+
+LNEngorg2 <- LNEngorg1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+LNEngorg2
+
+LNEngorg3 <- LNEngorg2 %>%
+  select(Engorgment, Type, Result, Tick.Sex)
+LNEngorg3
+str(LNEngorg3)
+
+LNEngorg3$Type <- factor(LNEngorg3$Type)
+LNEngorg3$Result <- factor(LNEngorg3$Result)
+LNEngorg3$Tick.Sex <- factor(LNEngorg3$Tick.Sex)
+LNEngorg3$Engorgment <- factor(LNEngorg3$Engorgment)
+
+LNEngorg4 <- LNEngorg3 %>%
+  group_by(Tick.Sex, Type, Result, Engorgment) %>%
+  tally()
+LNEngorg4
+str(LNEngorg4)
+
+LNEngorg5 <- LNEngorg4 %>% 
+  group_by(Tick.Sex, Type, Engorgment) %>%
+  dplyr::mutate(obs = sum(n))
+LNEngorg5
+  
+LNEngorg6 <- LNEngorg5%>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+LNEngorg6
+
+LNEngorg6<- as.tibble(LNEngorg6)
+
+LNEngorg7 <- LNEngorg6 %>%
+  mutate(prop=n/obs)
+LNEngorg7
+str(LNEngorg7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+NLymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = LNEngorg7)
+NLymeEngorg_glm
+summary(NLymeEngorg_glm)
 ```
 
