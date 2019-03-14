@@ -139,8 +139,8 @@ tukeyresults
 
 
 ```
-Run Tukey test for post-hoc if necssary  
-Are difference between 2018 PA vs 2018 NJ significant = no
+Lyme Run Tukey test for post-hoc if necssary  
+Are difference between 2018 PA vs 2018 NJ significant = no p = 0.993
 
 ```{r}
 POW1 <- PowLyme %>% 
@@ -206,7 +206,7 @@ tukeyresults %>%
 tukeyPOWresults
 
 ```
-Powassan positive significance between 2018 PA and NJ = no significane 
+Powassan positive significance between 2018 PA and NJ = no significane p = 0.0749
 
 
 ```{r}
@@ -262,7 +262,7 @@ ticksex_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Male7)
 ticksex_glm
 summary(ticksex_glm)
 ```
-Powassan significant between male and female = no significance
+Powassan significant between male and female = no significance p= 0.379
 
 ```{r}
 TickSex2 <- PowLyme
@@ -317,7 +317,7 @@ ticksexLyme_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Female9)
 ticksexLyme_glm
 summary(ticksexLyme_glm)
 ```
-Lyme data for tick sex male vs female significance = no(?)
+Lyme data for tick sex male vs female significance = no(?) p = 0.817
 
 ```{r}
 NJYears <- PowLyme %>% 
@@ -372,7 +372,7 @@ POWNJ_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJYear
 POWNJ_glm
 summary(POWNJ_glm)
 ```
-POW Significant difference between 2015-2018 NJ = no significance 
+POW Significant difference between 2015-2018 NJ = no significance p =0.261
 
 ```{r}
 NJLYears <- PowLyme %>% 
@@ -427,7 +427,7 @@ NJL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJLYears
 NJL_glm
 summary(NJL_glm)
 ```
-Significance b/w NJ 2015-2018 for Lyme = no significance
+Significance b/w NJ 2015-2018 for Lyme = no significance p = 0.261
 
 ```{r}
 PAYears <- PowLyme %>% 
@@ -481,7 +481,7 @@ POWPA_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PAYear
 POWPA_glm
 summary(POWPA_glm)
 ```
-POW significance between PA 2017-2018 = no significance
+POW significance between PA 2017-2018 = no significance p = 0.359
 
 ```{r}
 PALYears <- PowLyme %>% 
@@ -535,7 +535,7 @@ PAL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PALYears
 PAL_glm
 summary(PAL_glm)
 ```
-Significanc for Lyme PA 2017 vs 2018 = no significance 
+Significanc for Lyme PA 2017 vs 2018 = no significance p = 0.787
 
 ```{r}
 PANJPOW <- PowLyme %>% 
@@ -586,7 +586,7 @@ PANJPOW_glm <- glm(prop ~ State, family = "binomial", data = PANJPOW7)
 PANJPOW_glm
 summary(PANJPOW_glm)
 ```
-Significace between POW PA vs NJ overall = no significance 
+Significace between POW PA vs NJ overall = no significance p = 0.377
 
 ```{r}
 PANJLyme <- PowLyme %>% 
@@ -637,7 +637,7 @@ PANJLyme_glm <- glm(prop ~ State, family = "binomial", data = PANJLyme7)
 PANJLyme_glm
 summary(PANJLyme_glm)
 ```
-PA vs NJ Lyme = no significane 
+PA vs NJ Lyme = no significane  p = 0.807
 
 ```{r}
 Engorg <- PowLyme %>% 
@@ -692,7 +692,7 @@ POWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = Engorg7)
 POWEngorg_glm
 summary(POWEngorg_glm)
 ```
-No engorgment significance for POW in adults
+No engorgment significance for POW in adults p =0.347
 
 ```{r}
 EngorgLyme <- PowLyme %>% 
@@ -747,7 +747,7 @@ LymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = EngorgLyme7
 LymeEngorg_glm
 summary(LymeEngorg_glm)
 ```
-no significance for engorgment in adults for Lyme
+no significance for engorgment in adults for Lyme p= 0.730
 
 ```{r}
 NEngorg <- PowLyme %>% 
@@ -802,7 +802,7 @@ NPOWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = NEngorg7)
 NPOWEngorg_glm
 summary(NPOWEngorg_glm)
 ```
-Nymp no significance for engorment and POW
+Nymp no significance for engorment and POW p=0.359
 
 ```{r}
 LNEngorg <- PowLyme %>% 
@@ -839,8 +839,8 @@ LNEngorg5 <- LNEngorg4 %>%
   dplyr::mutate(obs = sum(n))
 LNEngorg5
   
-LNEngorg6 <- LNEngorg5%>%
-  filter(Type == "POW")%>%
+LNEngorg6 <- LNEngorg5 %>% 
+  filter(Type == "Lyme")%>%
   filter(Result == "Positive") 
 LNEngorg6
 
@@ -857,4 +857,114 @@ NLymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = LNEngorg7)
 NLymeEngorg_glm
 summary(NLymeEngorg_glm)
 ```
+nymph lyme engorgement = no signicance p=0.294
 
+```{r}
+Lstage <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+Lstage
+
+Lstage1 <- Lstage %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Nymph"| Tick.Sex == "Female" | Tick.Sex == "Male")
+Lstage1
+
+Lstage2 <- Lstage1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+Lstage2
+
+Lstage3 <- Lstage2 %>%
+  select(Type, Result, Tick.Sex)
+Lstage3
+str(Lstage3)
+
+Lstage3$Type <- factor(Lstage3$Type)
+Lstage3$Result <- factor(Lstage3$Result)
+Lstage3$Tick.Sex <- factor(Lstage3$Tick.Sex)
+
+
+Lstage4 <- Lstage3 %>%
+  group_by(Tick.Sex, Type, Result) %>%
+  tally()
+Lstage4
+str(Lstage4)
+
+Lstage5 <- Lstage4 %>% 
+  group_by(Tick.Sex, Type) %>%
+  dplyr::mutate(obs = sum(n))
+Lstage5
+  
+Lstage6 <- Lstage5 %>% 
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+Lstage6
+
+Lstage6<- as.tibble(Lstage6)
+
+Lstage7 <- Lstage6 %>%
+  mutate(prop=n/obs)
+Lstage7
+str(Lstage7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+Lstage_glm <- glm(prop ~ Tick.Sex, family = "binomial", data =Lstage7)
+Lstage_glm 
+summary(Lstage_glm)
+```
+lyme male vs female vs nymph no significance p = 0.532
+
+```{r}
+Pstage <- PowLyme %>% 
+  select(Tick.Collection.Year, POW, Lyme, County, State, Tick.Sex, Tick.Species) 
+Pstage
+
+Pstage1 <- Pstage %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(Tick.Sex == "Nymph"| Tick.Sex == "Female" | Tick.Sex == "Male")
+Pstage1
+
+Pstage2 <- Pstage1 %>%
+  gather(key = "Type", value = "Result", 2:3)
+Pstage2
+
+Pstage3 <- Pstage2 %>%
+  select(Type, Result, Tick.Sex)
+Pstage3
+str(Pstage3)
+
+Pstage3$Type <- factor(Pstage3$Type)
+Pstage3$Result <- factor(Pstage3$Result)
+Pstage3$Tick.Sex <- factor(Pstage3$Tick.Sex)
+
+
+Pstage4 <- Pstage3 %>%
+  group_by(Tick.Sex, Type, Result) %>%
+  tally()
+Pstage4
+str(Pstage4)
+
+Pstage5 <- Pstage4 %>% 
+  group_by(Tick.Sex, Type) %>%
+  dplyr::mutate(obs = sum(n))
+Pstage5
+  
+Pstage6 <- Pstage5 %>% 
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+Pstage6
+
+Pstage6<- as.tibble(Pstage6)
+
+Pstage7 <- Pstage6 %>%
+  mutate(prop=n/obs)
+Pstage7
+str(Pstage7)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+Pstage_glm <- glm(prop ~ Tick.Sex, family = "binomial", data =Pstage7)
+Pstage_glm 
+summary(Pstage_glm)
+```
+Pow Male vs female vs nymph no significance p = 0.273
