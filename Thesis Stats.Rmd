@@ -140,7 +140,7 @@ tukeyresults
 
 ```
 Lyme Run Tukey test for post-hoc if necssary  
-Are difference between 2018 PA vs 2018 NJ significant = no p = 0.993
+Are difference between 2018 PA vs 2018 NJ significant = no p = 0.602
 
 ```{r}
 POW1 <- PowLyme %>% 
@@ -262,7 +262,7 @@ ticksex_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Male7)
 ticksex_glm
 summary(ticksex_glm)
 ```
-Powassan significant between male and female = no significance p= 0.379
+Powassan significant between male and female = no significance p= 0.836 / df = 1 / z value = -0.207 / estimated standard error = 2.7060 / fisher score = 6 
 
 ```{r}
 TickSex2 <- PowLyme
@@ -317,7 +317,7 @@ ticksexLyme_glm <- glm(prop ~ Tick.Sex, family = "binomial", data = Female9)
 ticksexLyme_glm
 summary(ticksexLyme_glm)
 ```
-Lyme data for tick sex male vs female significance = no(?) p = 0.817
+Lyme data for tick sex male vs female significance = no(?) p = 0.945 / df = 1 / z value = 0.069 / std. error = 1.43550 / fisher score = 3
 
 ```{r}
 NJYears <- PowLyme %>% 
@@ -372,7 +372,7 @@ POWNJ_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJYear
 POWNJ_glm
 summary(POWNJ_glm)
 ```
-POW Significant difference between 2015-2018 NJ = no significance p =0.261
+POW Significant difference between 2015-2018 NJ = no significance p =0.986 / df = 2 / z value = 0.017 / std. error = 3.48817 / fisher score = 6 
 
 ```{r}
 NJLYears <- PowLyme %>% 
@@ -410,7 +410,7 @@ NJLYears5 <- NJLYears4 %>%
 NJLYears5
   
 NJLYears6 <- NJLYears5 %>%
-  filter(Type == "POW")%>%
+  filter(Type == "Lyme") %>%
   filter(Result == "Positive") 
 NJLYears6
 
@@ -427,7 +427,7 @@ NJL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = NJLYears
 NJL_glm
 summary(NJL_glm)
 ```
-Significance b/w NJ 2015-2018 for Lyme = no significance p = 0.261
+Significance b/w NJ 2015-2018 for Lyme = no significance p = 0.885 / df = 3 / z value = -0.358 / std. error = 1.96366 / fisher score = 4
 
 ```{r}
 PAYears <- PowLyme %>% 
@@ -481,7 +481,7 @@ POWPA_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PAYear
 POWPA_glm
 summary(POWPA_glm)
 ```
-POW significance between PA 2017-2018 = no significance p = 0.359
+POW significance between PA 2017-2018 = no significance p = 0.906 / df = 1 / z value = -0.917 / std. error = 2.3999 / fs = 5
 
 ```{r}
 PALYears <- PowLyme %>% 
@@ -535,7 +535,7 @@ PAL_glm <- glm(prop ~ Tick.Collection.Year, family = "binomial", data = PALYears
 PAL_glm
 summary(PAL_glm)
 ```
-Significanc for Lyme PA 2017 vs 2018 = no significance p = 0.787
+Significanc for Lyme PA 2017 vs 2018 = no significance p = 0.955 / df = 1 / z value = -0.056 / std error = 1.44226 / fisher score = 3
 
 ```{r}
 PANJPOW <- PowLyme %>% 
@@ -586,7 +586,7 @@ PANJPOW_glm <- glm(prop ~ State, family = "binomial", data = PANJPOW7)
 PANJPOW_glm
 summary(PANJPOW_glm)
 ```
-Significace between POW PA vs NJ overall = no significance p = 0.377
+Significace between POW PA vs NJ overall = no significance p = 0.852 / df =1 / z value = -0.186 / std. error = 2.8238 / fisher score 6
 
 ```{r}
 PANJLyme <- PowLyme %>% 
@@ -637,7 +637,7 @@ PANJLyme_glm <- glm(prop ~ State, family = "binomial", data = PANJLyme7)
 PANJLyme_glm
 summary(PANJLyme_glm)
 ```
-PA vs NJ Lyme = no significane  p = 0.807
+PA vs NJ Lyme = no significane  p = 0.986 / df = 1 / z value = -0.017 / std. error = 1.43616 / fisher score 3 
 
 ```{r}
 Engorg <- PowLyme %>% 
@@ -692,7 +692,7 @@ POWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = Engorg7)
 POWEngorg_glm
 summary(POWEngorg_glm)
 ```
-No engorgment significance for POW in adults p =0.347
+No engorgment significance for POW in adults p =0.910 / df = 3 / z value = -0.113 / std error = 5.1210 / fisher score = 7
 
 ```{r}
 EngorgLyme <- PowLyme %>% 
@@ -747,7 +747,7 @@ LymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = EngorgLyme7
 LymeEngorg_glm
 summary(LymeEngorg_glm)
 ```
-no significance for engorgment in adults for Lyme p= 0.730
+no significance for engorgment in adults for Lyme p= 0.799 / df = 3 / z value = -0.254 / std error = 1.6578 / fisher score = 4
 
 ```{r}
 NEngorg <- PowLyme %>% 
@@ -802,7 +802,7 @@ NPOWEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = NEngorg7)
 NPOWEngorg_glm
 summary(NPOWEngorg_glm)
 ```
-Nymp no significance for engorment and POW p=0.359
+Nymp no significance for engorment and POW p=0.976 / df = 1 / z value = -0.030 / std. error = 2.19476 / fisher score = 5
 
 ```{r}
 LNEngorg <- PowLyme %>% 
@@ -857,7 +857,7 @@ NLymeEngorg_glm <- glm(prop ~ Engorgment, family = "binomial", data = LNEngorg7)
 NLymeEngorg_glm
 summary(NLymeEngorg_glm)
 ```
-nymph lyme engorgement = no signicance p=0.294
+nymph lyme engorgement = no signicance p=0.815 / df = 2 / z value = -0.234 / std. error = 2.9667 / fisher score = 5
 
 ```{r}
 Lstage <- PowLyme %>% 
@@ -912,7 +912,7 @@ Lstage_glm <- glm(prop ~ Tick.Sex, family = "binomial", data =Lstage7)
 Lstage_glm 
 summary(Lstage_glm)
 ```
-lyme male vs female vs nymph no significance p = 0.532
+lyme male vs female vs nymph no significance p = 0.725, df= 2, z value = 0.352 / std error = 1.8119 / fisher score = 5
 
 ```{r}
 Pstage <- PowLyme %>% 
@@ -967,4 +967,4 @@ Pstage_glm <- glm(prop ~ Tick.Sex, family = "binomial", data =Pstage7)
 Pstage_glm 
 summary(Pstage_glm)
 ```
-Pow Male vs female vs nymph no significance p = 0.273
+Pow Male vs female vs nymph no significance p = 0.897 / df = 2 / z value = -0.129 / std error = 3.4835 / fisher score = 6
