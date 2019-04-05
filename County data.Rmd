@@ -1,0 +1,173 @@
+---
+title: "County Comparison"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+CountyData <- read.csv("Results.csv")
+CountyData
+
+```
+
+```{r}
+library("tidyverse")
+library("Rmisc")
+```
+
+```{r}
+SW <- CountyData
+str(CountyData)
+# Make a copy of data for county data
+
+SW1 <- SW %>%
+  select(State, County, POW, Lyme, Tick.Species)
+SW1
+#Select variables that are going to be analyzed
+
+SW2 <- SW1 %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(State == "NJ") %>%
+  filter(County == "Warren" | County == "Sussex")
+SW2
+#Filter the variables specific for this analysis (what species you want, what state and counties)
+
+SW3 <- SW2 %>%
+  gather(key = "Type", value = "Result", 3:4)
+SW3
+#Gather will create new columns and can relabel them to make them what you want
+
+SW4 <- SW3 %>%
+  select(County, Type, Result)
+SW4
+str(SW4)
+#str will show what each category is defined as (factor, number, variable ect)
+
+SW4$Type <- factor(SW4$Type)
+SW4$County <- factor(SW4$County)
+SW4$Result <- factor(SW4$Result)
+str(SW4)
+#Turn catergories into desired 
+
+SW5 <- SW4 %>%
+  group_by(Type, Result, County) %>%
+  tally()
+SW5
+#group by and tally will count and make a new chart with variables 
+
+SW6 <- SW5 %>% 
+  group_by(County, Type) %>%
+  dplyr::mutate(obs = sum(n))
+SW6
+#
+  
+SW7 <- SW6 %>%
+  filter(Type == "POW")%>%
+  filter(Result == "Positive") 
+SW7
+
+SW7 <- as_tibble(SW7)
+
+SW8 <- SW7 %>%
+  mutate(prop=n/obs)
+SW8
+str(SW8)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+SW_glm <- glm(prop ~ County, family = "binomial", data = SW8)
+ticksex_glm
+summary(SW_glm)
+```
+No significant difference between Warren and Sussex for Powassan positive - 
+p = 0.917, df = 1, z value = 0.105, Std.Error = 3.6248, fisher scoring = 6
+
+```{r}
+WS <- CountyData
+str(CountyData)
+# Make a copy of data for county data
+
+WS1 <- WS %>%
+  select(State, County, POW, Lyme, Tick.Species)
+SW1
+#Select variables that are going to be analyzed
+
+WS2 <- WS1 %>% 
+  filter(Tick.Species == "Ixodes scapularis") %>%
+  filter(State == "NJ") %>%
+  filter(County == "Warren" | County == "Sussex")
+WS2
+#Filter the variables specific for this analysis (what species you want, what state and counties)
+
+WS3 <- WS2 %>%
+  gather(key = "Type", value = "Result", 3:4)
+WS3
+#Gather will create new columns and can relabel them to make them what you want
+
+WS4 <- WS3 %>%
+  select(County, Type, Result)
+WS4
+str(WS4)
+#str will show what each category is defined as (factor, number, variable ect)
+
+WS4$Type <- factor(WS4$Type)
+WS4$County <- factor(WS4$County)
+WS4$Result <- factor(WS4$Result)
+str(WS4)
+#Turn catergories into desired 
+
+WS5 <- WS4 %>%
+  group_by(Type, Result, County) %>%
+  tally()
+WS5
+#group by and tally will count and make a new chart with variables 
+
+WS6 <- WS5 %>% 
+  group_by(County, Type) %>%
+  dplyr::mutate(obs = sum(n))
+WS6
+#
+  
+WS7 <- WS6 %>%
+  filter(Type == "Lyme")%>%
+  filter(Result == "Positive") 
+WS7
+
+WS7 <- as_tibble(WS7)
+
+WS8 <- WS7 %>%
+  mutate(prop=n/obs)
+WS8
+str(WS8)
+
+options(contrasts=c('contr.sum', 'contr.poly'))
+
+WS_glm <- glm(prop ~ County, family = "binomial", data = WS8)
+ticksex_glm
+summary(WS_glm)
+```
+
+

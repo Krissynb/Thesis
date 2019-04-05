@@ -968,3 +968,20 @@ Pstage_glm
 summary(Pstage_glm)
 ```
 Pow Male vs female vs nymph no significance p = 0.897 / df = 2 / z value = -0.129 / std error = 3.4835 / fisher score = 6
+
+```{r}
+TickData <- read_csv("TickData.csv")
+TickData
+
+```
+
+```{r}
+TickData1 <- TickData
+TickData1
+
+StateTick <- TickData1 %>%
+  group_by(State, Species) %>%
+  summarise(sum(`Total Ticks`))
+
+```
+
